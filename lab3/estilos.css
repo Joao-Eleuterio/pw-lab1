@@ -1,0 +1,21 @@
+{
+    font-family: sans-serif;
+}
+h1{ /tudo que é h1 tem a cor azul*/
+    color: #6779ff;
+}
+.important{
+    font-weight: bold;
+}
+#unico{
+    background: azure;
+}
+#a[target=_blank]{
+    background-color: red;
+}
+div:hover{
+    background: violet;
+}
+p::first-letter{
+    font-size: 2em;
+}
