@@ -1,0 +1,198 @@
+
+   @media (min-width:901px){
+
+            .destinos{
+                background-color: cyan;
+                display: grid;
+                grid-template-areas:
+                                    "obidos serraEstrela sagres campismo"
+                                    "uniCoimbra uniCoimbra benagil campismo";
+                padding: 20px;
+                gap: 10px;
+
+            }
+
+            .container {
+                position: relative;
+                color: white;
+           }
+
+           .top-left {
+                position: absolute;
+                color: white;
+                background-color:black;
+                margin: 20px;
+                box-shadow: 2px 3px 3px lightgray;
+                font-size: xx-large;
+           }
+
+            .bottom-left {
+                position: absolute;
+                color: white;
+                font-size: large;
+                background-color:black;
+                box-shadow: 2px 3px 3px lightgray;
+                bottom: 100px;
+                left: 20px;
+            }
+
+            .bottom-left2 {
+                position: absolute;
+                color: white;
+                font-size: large;
+                bottom: 30px;
+                left: 20px;
+            }
+
+            .button {
+                position: relative;
+                background-color: lightgray;
+                text-color: black;
+                padding: 15px 35px;
+                bottom: 10px;
+                left:-5px;
+                font-size: 13px;
+                box-shadow: 2px 3px 3px black;
+                border-radius: 30px;
+            }
+            .button:hover{
+                background-color: cyan;
+                font-weight: bold;
+            }
+
+   }
+   @media (max-width:900px) {
+            .destinos{
+                width: 100%;
+                background-color: cyan;
+                display: grid;
+                grid-template-areas:
+                                    "obidos serraEstrela"
+                                    "sagres benagil"
+                                    "uniCoimbra uniCoimbra"
+                                    "campismo campismo";
+                padding: 10px;
+                gap:5px;
+                justify-content: space-between;
+            }
+
+            .container {
+                position: relative;
+                color: white;
+           }
+
+           .top-left {
+                position: absolute;
+                color: black;
+                margin: 20px;
+                background-color:white;
+                box-shadow: 2px 3px 3px black;
+                font-size: xx-large;
+           }
+
+            .bottom-left {
+                position: absolute;
+                color: black;
+                font-size: large;
+                background-color:white;
+                bottom: 100px;
+                left: 20px;
+            }
+
+            .bottom-left2 {
+                position: absolute;
+                color: white;
+                font-size: large;
+                bottom: 30px;
+                left: 20px;
+            }
+            .button {
+                position: relative;
+                background-color: lightgray;
+                text-color: black;
+                padding: 15px 35px;
+                bottom: 10px;
+                left:-5px;
+                font-size: 13px;
+                box-shadow: 2px 3px 3px black;
+                border-radius: 30px;
+            }
+            .button:hover{
+                background-color: cyan;
+                font-weight: bold;
+            }
+        }
+   /*destinos lugares*/
+   .obidos{grid-area:obidos; background-image:url("imagens/obidos.jpg"); height:400px; width:400px;}
+   .serraEstrela{ grid-area:serraEstrela; background-image:url("imagens/serraEstrela.jpg");height:400px; width:400px;   }
+   .sagres{grid-area:sagres; background-image:url("imagens/sagres.jpg"); height:400px; width:400px;}
+   .grutaBenagil{ grid-area:benagil; background-image:url("imagens/benagil.jpg"); height:400px; width:400px;}
+   .uniCoimbra{  grid-area:uniCoimbra;  background-image:url("imagens/universidadeCoimbra.jpg"); height:400px; width:800px;}
+   .campismo{  grid-area:campismo; background-image:url("imagens/campismo.jpg"); height:600px;}
+    /*Dicas para viajar*/
+   .dicas{display: flex;
+                  flex-flow: row wrap;
+                  justify-content:space-around;
+                   padding:50px;align-items:center;
+   }
+   .dicas > div{
+                    background-color:cyan;
+                  width:450px;height:300px;
+                  box-shadow: 5px 5px 15px black;
+                  margin:10px;
+                  text-align:center;
+   }
+   .dicas div div:last-child{
+                   background-color:white;
+                  padding:20px; box-shadow: 5px 5px  15px black;
+                  display: flex; justify-content:center;
+                   margin:10px;
+   }
+   /*cabecalho*/
+   .cabecalho > div{
+            display:flex;
+            background-image: url("imagens/cabecalho.png");
+            justify-content:space-around;
+   }
+   /*Fonte letra*/
+   *{font-family: 'Oswald', times,serif;}
+   *{box.sizing:border-box;}
+   /*Capitais*/
+   .capitais{display: flex;background-color:cyan;
+                  flex-flow: row wrap;
+                  justify-content:space-around;
+                   padding:50px;
+   }
+   .capitais > div{display: flex;
+                  border-radius: 20px; box-shadow: 5px 5px 15px black;
+                  margin:10px;
+   }
+   .capitais img{
+                  display: inline-block;
+                  border-radius: 20px 0 0 20px;   height:100%;
+   }
+   .capitais div div:last-child{
+
+                  width: 150px;  background-color:white;
+                  padding:20px;  border-radius:0 20px 20px 0;
+                  display: flex; justify-content:center;
+                  align-items:center;
+   }
+   /*formataçao de hiperlinks*/
+   a {color: purple; padding: 20px; text-decoration: none;}
+   a:hover{
+            background-color:lightgray;
+            font-weight: bold;
+        }
+   /*menu*/
+   .menu{ display :flex ; }
+   .menu a{
+   position: relative;
+                background-color: lightgray;
+                text-color: black;
+                padding: 15px 35px;
+                font-size: 16px;
+                box-shadow: 2px 3px 3px black;
+                border-radius: 30px;}
+   .menu a:last-child{margin-left:auto;}
+

@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-<title>A minha Segunda página</title>
+    <title>Segunda página</title>
 </head>
 <body>
-        <h1>A Internet e a Web</h1>
-   <h3>Menu</h3>
-<p><a href="../index.html">Laboratórios PW</a></p><p><a href="index.html">Introdução à programação Web</a>
-<p><b><a href="report.html">Conhecer a Internet</a></b></p><p><a href="lab2/index.html">Nova cena</a></p>
-<br>
-<br>
-<ul>
-    <p>Estamos no mesmo sitio  .-.</p>
-</ul>
-<ol><img src="images/ipTelemovel.jfif"></ol>
-    <ol><img src="images/ipPC.png"></ol>
+<header><h1>A Internet e a Web</h1></header>
+<nav><p><a href="index.html">Programação Web</a> | <b><a href="report.html">A Internet e a Web</a></b> | <a href="../index.html">Home</a></p>
+<br></nav>
+<main>
+<ol>
+    <li><h4>IP</h4>
+        <p>Usando o <a href="https://whatismyipaddress.com/">what is my ip</a> consegui analisar e comparar a exatidão
+            do site em que dois dispositivos diferentes calharam no mesmo sitio.</p>
+        <pre>                               IP do Computador                                            IP do Telemovel
+    <img src="images/ipPc.png">         <img src="images/IpTelemovel.jpeg"></pre>
+        <br>
+        <br>
+        <p>Também conseguimos saber o ip de outros dispositivos por exemplo do <a
+                href="https://dashboard.heroku.com/apps">Heroku</a> utilizando <a
+                href="https://get-site-ip.com/">get-ip</a> para saber o ip pelo url e depois o <a
+                href=https://whatismyipaddress.com/">what is my ip</a> outra vez para saber a localização</p>
+        <img src="images/IPheroku.png">
+    </li>
+
+    <li><h4>Tracert</h4>
+        <p>Com estas imagens conseguimos ver por onde passam os pacotes do meu computador até ao servidor <a
+            href="https://dashboard.heroku.com/apps">Heroku</a></p>
+        <img src="images/tracert.png">
+        <img src="images/tracertSaltos.png" align="top">
+    </li>
+
+    <li>
+        <h4>Inspect</h4>
+        <p>Aqui conseguimos ver os ficheiros que existem na minha página Web </p>
+        <img src="images/Inspect.png">
+
+        <br>
+        <br>
+        <pre>                                   Preview                                                               Headers                                                                       Timing</pre>
+        <span><img src="images/InspectPreviewMeu.png">  <img src="images/InspectHeadersMeu.png">  <img
+                src="images/InspectTimingMeu.png"></span>
+
+        <p>O preview serve para vizualizar como ficaram os ficheiros <br> O Headers mostrará informações sobre o site
+            como o url, o metodo de request <br>
+            O Timing quanto tempo demorou a fazer algumas coisas como por exemplo quanto tempo demorou a enviar o
+            request ou a fazer download do conteudo</p>
+    </li>
+</ol>
+</main>
+<footer ><p align="right">João Eleutério | a22007237 | Licenciatura em Engenharia Informática | 2ºano | Universidade Lusófona </p></footer>
 
 </body>
+
 </html>

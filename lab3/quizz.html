@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="João Eleutério">
-    <meta name="keywords" content="palavras chave">
-    <meta name="description" content="Website sobre Lisboa">
-    <title>Lisboa</title>
-    <link rel="shortcut icon" type="image/x-icon" href="imagens/torreBelem.ico"/>
-
+    <meta name="keywords" content="São Paulo">
+    <meta name="description" content="Website sobre São Paulo">
+<title>Quizz São Paulo</title>
+    <style>@import "estilos.css"</style>
+    <link rel="shortcut icon" type="image/x-icon" href="images/saoPaulo.ico"/>
 </head>
-<body style="background-color:plum">
+<body style="background-color:#AD50B0">
+
 <h3>Quizz</h3>
 <br>
-<p><a href="index.html">Introdução</a> |
-    <a href="local.html">Localização</a> |
-    <a href="multimedia.html">Multimédia</a> |
-    <a href="info.html">Informações</a> |
-    <a href="../index.html">Home</a> |
-    <b><a href="quizz.html">Quizz</a></b> |
-    <a href="html5-css.html">html5-css</a> |
-    <a href="estilos.css">estilos</a></p>
+    <nav><p><a href="../index.html">Home</a> | <a href="html5-css.html">HTML5 e CSS</a> | <b><a href="quizz.html">Quizz</a></b></p></nav>
+
 <br>
 <br>
-<p>Nesta página vamos fazer um quizz para ver se conhece bem a cidade</p>
-<br>
-<fieldset>
-    <legend>Quizz sobre Lisboa</legend>
-    <form method="POST" action="mailto: jpcse1992@gmail.com" enctype="multipart/form-data">
+<p>Nesta página será feito um quizz sobre a cidade São Paulo. Será que estás pronto?</p>
+
+<fieldset><legend>Quizz sobre São Paulo</legend>
+<form method="POST" action="mailto: jpcse1992@gmail.com" enctype="multipart/form-data">
         <fieldset>
             <legend>Info</legend>
             <label>Nome: <input type="text" id=nome value="nome" pattern="[A-Za-z]{20}"></label>
@@ -42,43 +36,47 @@
         </label>
 
             <br><label>Selecione os sitios que foi (se a resposta anterior for sim)
-            <input type="checkbox" value="Chiado" name="lugares" id="sitioChiado">Chiado
-            <input type="checkbox" value="Bairro Alto" name="lugares" id="sitioBairroAlto">Bairro Alto
-            <input type="checkbox" value="Sé Catedral" name="lugares" id="sitioCatedral">Sé Catedral
+            <input type="checkbox" value="AvenidaPaulista" name="lugares" id="sitioAvenidaPaulista">Avenida Paulista
+            <input type="checkbox" value="MASP" name="lugares" id="sitioMASP">MASP
+            <input type="checkbox" value="SampaSky" name="lugares" id="sitioSampaSky">Sampa Sky
         </label>
             <br>
             <label>Quando visitou?
                 <input type="date" id="date" name="datemin" min="1900-01-01">
             </label>
-            <br><label>É uma imagem de Lisboa?
-            <input type="image" src="imagens/lisboa._grande.jpg" width="48" height="48">
-            <input type="text" id=eLisboa placeholder="Escrever sim ou nao" maxlength="3" size="3" autocomplete="off" required>
+            <br><label>É uma imagem de São Paulo?
+            <input type="image" src="images/foto3_pequena.jpg" width="48" height="48">
+            <input type="text" id=eSaoPaulo placeholder="Escrever sim ou nao" maxlength="3" size="20" autocomplete="off" required>
         </label>
-            <br><label>Escolha uma cor -> <input id=cor type="color"></label>
-            <br><label>Em que ano foi a revolução 25 de abril? <input type="number" id=anoRevolucao min=1900 max="2022"
-                                                                      value="1900"></label>
-            <br><label>Coloque uma imagem que gosta de Lisboa <input id=file type="file" multiple></label>
-            <br><label> Quão gosta da cidade? 🥱 <input id=gostou type="range"> 🤩</label>
-            <br><label>Qual o tipo de comida <input list="tipoComida" id=tipoComidaPortuguesa name="browser">
+            <br><label>Escolha uma cor que acha que represente São Paulo-> <input id=cor type="color"></label><br>
+            <br><label>Em que ano foi fundado São Paulo? <input type="number" id=anoRevolucao min=1300 max="2000"
+                                                                      value="1600"></label><br>
+            <br><label>Coloque uma imagem que gosta de São Paulo <input id=file type="file" multiple></label><br>
+            <br><label> Quão gosta da cidade? 🥱 <input id=gostou type="range"> 🤩</label><br>
+            <br><label>Qual o tipo de comida <input list="tipoComida" id=tipoComidaPortuguesa name="browser"><br>
             <datalist id="tipoComida">
                 <option>Italiana</option>
                 <option>Chinesa</option>
-                <option>Portuguesa</option>
+                <option>brasileira</option>
                 <option>Arabe</option>
             </datalist>
-        </label>
-            <br><label>O país dessa cidade é conhecida por produzir muito: <select id="Producao" id=producao name="producao">
-            <option value="aço">aço</option>
+        </label><br>
+            <br><label>O país dessa cidade é conhecida por exportar muito: <select  id=exportar name="exportar">
+            <option value="aço">Minério de Ferro</option>
             <option value="madeira">madeira</option>
             <option value="bacalhau" selected>bacalhau</option>
             <option value="cortiça">cortiça</option>
-        </select></label>
+        </select></label><br>
             <br>Descricao:<br><textarea id=descricao placeholder="Dê uma pequna descrição sobre a cidade e da sua aventura" rows="10" cols="50"></textarea>
         </fieldset>
 
         <input type="submit">
     </form>
 </fieldset>
+
+
+
+<footer ><p align="right">João Eleutério | a22007237 | Licenciatura em Engenharia Informática | 2ºano | Universidade Lusófona </p></footer>
 
 </body>
 </html>
