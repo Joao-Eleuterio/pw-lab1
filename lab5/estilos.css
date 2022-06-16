@@ -1,0 +1,86 @@
+* {padding: 0; margin: 0;}
+/*formataçao de hiperlinks*/
+   a {color: purple; padding: 20px; text-decoration: none;}
+   a:hover{
+            background-color:lightgray;
+            font-weight: bold;
+        }
+   /*menu*/
+   .menu{ display :flex; height:10vh;  }
+   .menu a{
+                background-color: lightgray;
+                text-color: black;
+                padding: 15px 35px;
+                font-size: 20px;
+
+                box-shadow: 2px 3px 3px black;
+                border-radius: 30px;}
+   .menu a:last-child{margin-left:auto;}
+   /*-------------------------------------------------------*/
+    /* propriedades do menu */
+    .inicio div:first-child {
+    border:none;
+    position: sticky;
+    top: 0;
+    }
+    /*cabecalho*/
+   .cabecalho {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: url('imagens/hero.gif');
+    height:90vh;
+    width:100%;
+    border-radius: 20px;
+
+    }
+    .cabecalho > h1{
+        display: flex;
+        border-radius: 20px 20px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 3px 3px gray;
+        background-color:lightgray;
+        font-size:xxx-large;
+    }
+    .cabecalho > p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:x-large;
+    }
+    div:first-child {
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr;
+}
+/*-------------------------------------------------------*/
+/* parallax*/
+.parallax {
+  /* The image used */
+  background-image: url("imagens/parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-parallax{
+background-color:white;
+text-align:center;
+}
+/*-------------------------------------------------------*/
+/*Unsplash*/
+
+
+
+
+
+
+
+
+
+
